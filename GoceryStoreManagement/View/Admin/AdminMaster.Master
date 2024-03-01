@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="GoceryStoreManagement.View.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../../Asset/lib/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-danger bg-danger">
+  <a class="navbar-brand" href="#"><b><i>!!Go-Grocery!!</i></b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Products.aspx">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Categories.aspx">Categories</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Seller.aspx">Sellers</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Dashboard.aspx">Dashboard</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="../Login.aspx">Logout</a>
+      </li>
+      
+      
+    </ul>
+    
+  </div>
+</nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
